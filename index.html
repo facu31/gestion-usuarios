@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Usuarios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Gestión de Usuarios</h1>
+
+    <h2>Agregar Nuevo Usuario</h2>
+    <div id="formulario">
+        <input type="text" id="nombre" placeholder="Nombre">
+        <input type="email" id="email" placeholder="Email">
+        <button onclick="agregarUsuario()">Agregar Usuario</button>
+    </div>
+
+    <h2>Modificar Usuario</h2>
+    <div id="formulario_modificar">
+        <input type="hidden" id="id_usuario_modificar">
+        <input type="text" id="nombre_modificar" placeholder="Nuevo Nombre">
+        <input type="email" id="email_modificar" placeholder="Nuevo Email">
+        <button onclick="modificarUsuario()">Modificar Usuario</button>
+    </div>
+
+    <h2>Usuarios</h2>
+    <table id="tabla_usuarios">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Email</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Aquí se llenarán los usuarios -->
+        </tbody>
+    </table>
+
+    <script src="app.js"></script>
+</body>
+</html>
